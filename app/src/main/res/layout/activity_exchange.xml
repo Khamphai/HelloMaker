@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arduinolao.com.hellomaker.ExchangeActivity">
+
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:id="@+id/tvTop"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="ຄຳນວນອັດຕາແລກປ່ຽນເງິນກີບ"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_below="@id/tvTop"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:background="@drawable/border_ex"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edtLAK"
+                android:hint="LAK"
+                android:gravity="center_horizontal"
+                android:textSize="27sp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="@drawable/border_result"
+                android:weightSum="4"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="#FFFFFF"
+                    android:id="@+id/tvType"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="THB"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:text="0"
+                    android:background="#FFFFFF"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="3"
+                    android:textSize="40sp"
+                    android:layout_marginLeft="2dp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/border_ex"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/rgRate"
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:theme="@style/MyRadioButton"
+                    android:id="@+id/rdTHB"
+                    android:text="THB"
+                    android:checked="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:theme="@style/MyRadioButton"
+                    android:id="@+id/rdUSD"
+                    android:text="USD"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:theme="@style/MyRadioButton"
+                    android:id="@+id/rdCNY"
+                    android:text="CNY"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:theme="@style/MyRadioButton"
+                    android:id="@+id/rdJPY"
+                    android:text="JPY"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCal"
+        android:textColor="#FFFFFF"
+        android:text="Calculate"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+</RelativeLayout>

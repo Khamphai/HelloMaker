@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloMaker</string>
+    <string name="hi">ສະບາຍດີ</string>
+    <string name="b">ບາດ</string>
+    <string name="s">ສະຫຼຶງ</string>
+    <string name="buy">ລາຄາຊື້</string>
+    <string name="sell">ລາຄາຂາຍ</string>
+</resources>
